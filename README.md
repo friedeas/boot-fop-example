@@ -6,7 +6,7 @@ This example is using Apache FOP and the TTF font Free 3 of 9 from http://www.sq
 Further documentation for Code 39 and example PDF URL can be found here:
 
 * [Code 39 Documentation ](https://en.wikipedia.org/wiki/Code_39)
-* [Example PDF URL](http://localhost:8080/getPdf)
+* [Example PDF URL](http://localhost:8080/example.pdf)
 
 ### Guides
 The class org.apache.fop.fonts.apps.TTFReader was used to generate the included TrueType font metrics file. This can be done in a batch run via a script of with the shown Java code:
