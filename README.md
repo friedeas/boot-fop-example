@@ -1,4 +1,4 @@
-# Spring Boot and Apache FOP PDF Barcode Example
+# Spring Boot MVC and Apache FOP PDF Barcode Example
 
 ### Example PDF Document
 This example is using Apache FOP and the TTF font Free 3 of 9 from http://www.squaregear.net/fonts/free3of9.shtml 
