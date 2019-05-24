@@ -1,0 +1,13 @@
+<fop version="2.3">
+	<strict-validation>false</strict-validation>
+	<renderers>
+		<renderer mime="application/pdf">
+			<fonts>
+				<font metrics-url="classpath:fop/free3of9.xml" kerning="yes"
+					  embed-url="classpath:fop/free3of9.ttf">
+					<font-triplet name="New" style="normal" weight="normal" />
+				</font>
+			</fonts>
+		</renderer>
+	</renderers>
+</fop>

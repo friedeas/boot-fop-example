@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<font-metrics metrics-version="2" type="TYPE0">
+	<font-name>New</font-name>
+	<full-name>Free 3 of 9 Regular</full-name>
+	<family-name>New</family-name>
+	<embed />
+	<cap-height>750</cap-height>
+	<x-height>0</x-height>
+	<ascender>751</ascender>
+	<descender>0</descender>
+	<bbox>
+		<left>0</left>
+		<bottom>0</bottom>
+		<right>357</right>
+		<top>751</top>
+	</bbox>
+	<flags>33</flags>
+	<stemv>0</stemv>
+	<italicangle>0</italicangle>
+	<subtype>TYPE0</subtype>
+	<multibyte-extras>
+		<cid-type>CIDFontType2</cid-type>
+		<default-width>0</default-width>
+		<bfranges>
+			<bf gi="42" ue="32" us="32" />
+			<bf gi="43" ue="36" us="36" />
+			<bf gi="46" ue="37" us="37" />
+			<bf gi="3" ue="42" us="42" />
+			<bf gi="45" ue="43" us="43" />
+			<bf gi="0" ue="44" us="44" />
+			<bf gi="40" ue="46" us="45" />
+			<bf gi="44" ue="47" us="47" />
+			<bf gi="4" ue="57" us="48" />
+			<bf gi="14" ue="90" us="65" />
+			<bf gi="42" ue="95" us="95" />
+			<bf gi="0" ue="65535" us="65535" />
+		</bfranges>
+		<cid-widths start-index="0">
+			<wx w="382" xMax="0" xMin="0" yMax="0" yMin="0" />
+			<wx w="382" xMax="25" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="68" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="751" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+			<wx w="382" xMax="357" xMin="0" yMax="750" yMin="0" />
+		</cid-widths>
+	</multibyte-extras>
+</font-metrics>
