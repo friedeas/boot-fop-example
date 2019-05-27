@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.xml.sax.SAXException;
 
 @Configuration
@@ -22,8 +23,7 @@ public class BeanConfiguration implements ResourceLoaderAware {
 	private ResourceLoader resourceLoader;
 
 	@Bean
-	public FopFactory getFopFactory()
-			throws IOException, ConfigurationException, SAXException {
+	public FopFactory getFopFactory() throws IOException, ConfigurationException, SAXException {
 
 		Resource configResource = this.resourceLoader.getResource("classpath:fop/fop-config.xml");
 		File fopConfigFile = configResource.getFile();
@@ -33,6 +33,15 @@ public class BeanConfiguration implements ResourceLoaderAware {
 		org.apache.avalon.framework.configuration.Configuration cfg = cfgBuilder.buildFromFile(fopConfigFile);
 		FopFactoryBuilder builder = new FopFactoryBuilder(baseFolder.toURI()).setConfiguration(cfg);
 		return builder.build();
+	}
+
+	@Bean
+	public Jaxb2Marshaller jaxb2Marshaller() {
+		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+		marshaller.setClassesToBeBound(new Class[] {
+				// all the classes the marshaller needs to know
+				de.u808.CustomModelObject.class, });
+		return marshaller;
 	}
 
 	@Bean
