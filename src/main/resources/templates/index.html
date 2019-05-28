@@ -1,13 +1,37 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Apache FOP PDF Barcode Example</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-	<h1>Spring Boot MVC and Apache FOP PDF Barcode Example</h1>
-    <p>
-    	<a href="/example.pdf">Example PDF with an Code 39 barcode</a>
-    </p>
-</body>
+	<head>
+	    <title>Apache FOP PDF Barcode Example</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	</head>
+	<body>
+	    <div class="container-fluid">
+	    	<div class="col" id="main">
+	    		<h1>Spring Boot MVC and Apache FOP PDF Barcode Example</h1>	    			    		
+	    		<div>
+					<p>
+						Example PDF with an <a href="https://en.wikipedia.org/wiki/Code_39">Code 39</a> 
+						barcode generated with the TTF font <i>Free 3 of 9</i> from 
+						<a href="http://www.squaregear.net/fonts/free3of9.shtml">http://www.squaregear.net/fonts/free3of9.shtml</a>
+					</p>
+					<ul class="list-group">
+		    			<li class="list-group-item">
+		    				PDF with barcode: <a href="/example.pdf">12345678</a>
+		    			</li>
+		    			<li class="list-group-item">
+		    				<form method="GET" enctype="multipart/form-data" action="/example.pdf">
+				    		<label>Barcode</label>
+							<input type="number" min="0" name="code"/>
+							<input type="submit" value="Generate PDF" />
+				    	</form>
+		    			</li>
+		    		</ul>
+		    	</div>	    		
+			</div>
+	    </div>
+		
+		<script src="/webjars/jquery/jquery.min.js"></script>
+		<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	</body>
 </html>
