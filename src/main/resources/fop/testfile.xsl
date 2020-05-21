@@ -25,11 +25,28 @@
 						color="white" text-align="center" padding-top="3pt">
 						Barcode Example
 					</fo:block>
-
 					
-					<fo:block font-family="New" font-size="36pt">
-						*<xsl:value-of select="customModelObject/codeValue"/>*
-					</fo:block>
+					<fo:table table-layout="fixed">					   
+						<fo:table-column column-width="proportional-column-width(1)"/>
+					    <fo:table-body line-height="16pt">
+					        <fo:table-row height="20pt">
+					            <fo:table-cell text-align="center">
+					                <fo:block-container >
+					                    <fo:block font-family="New" font-size="36pt">
+											*<xsl:value-of select="customModelObject/codeValue"/>*
+										</fo:block>
+					                </fo:block-container>					                
+					            </fo:table-cell>
+					        </fo:table-row>
+					        <fo:table-row>
+					        	<fo:table-cell text-align="center">
+					        		<fo:block-container>
+					                    <fo:block font-size="9pt" letter-spacing="9pt">*<xsl:value-of select="customModelObject/codeValue"/>*</fo:block>
+					                </fo:block-container>
+					        	</fo:table-cell>
+					        </fo:table-row>
+					    </fo:table-body>
+					</fo:table>
 
 				</fo:flow>
 			</fo:page-sequence>
