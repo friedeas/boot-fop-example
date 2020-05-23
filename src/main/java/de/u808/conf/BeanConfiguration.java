@@ -5,10 +5,10 @@ import java.io.IOException;
 
 import javax.xml.transform.TransformerFactory;
 
-import org.apache.avalon.framework.configuration.ConfigurationException;
-import org.apache.avalon.framework.configuration.DefaultConfigurationBuilder;
 import org.apache.fop.apps.FopFactory;
 import org.apache.fop.apps.FopFactoryBuilder;
+import org.apache.fop.configuration.ConfigurationException;
+import org.apache.fop.configuration.DefaultConfigurationBuilder;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +16,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.xml.sax.SAXException;
+
+import de.u808.CustomModelObject;
 
 @Configuration
 public class BeanConfiguration implements ResourceLoaderAware {
@@ -30,7 +32,7 @@ public class BeanConfiguration implements ResourceLoaderAware {
 		File baseFolder = new File(fopConfigFile.getParent());
 
 		DefaultConfigurationBuilder cfgBuilder = new DefaultConfigurationBuilder();
-		org.apache.avalon.framework.configuration.Configuration cfg = cfgBuilder.buildFromFile(fopConfigFile);
+		org.apache.fop.configuration.Configuration cfg = cfgBuilder.buildFromFile(fopConfigFile);
 		FopFactoryBuilder builder = new FopFactoryBuilder(baseFolder.toURI()).setConfiguration(cfg);
 		return builder.build();
 	}
@@ -40,7 +42,7 @@ public class BeanConfiguration implements ResourceLoaderAware {
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
 		marshaller.setClassesToBeBound(new Class[] {
 				// all the classes the marshaller needs to know
-				de.u808.CustomModelObject.class, });
+				CustomModelObject.class, });
 		return marshaller;
 	}
 
